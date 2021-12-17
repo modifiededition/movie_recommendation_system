@@ -89,15 +89,13 @@ Dates have the format YYYY-MM-DD.
 
 **Note: here, we do not have low-latency constraint as these type of systems at an indsutry level do not compute what you might like right when you are logged in to your id. It actually pre-compute results like for a user(u_i) it might like [m_1,m_2,m_8,m_10] and store it in a hash table/lookup table and show results as soon as you logged in.**
 
-## 3. Exploratory Data Analysis
+## 3. Preprocessing steps
 
-### 3.1 Preprocessing steps
-
-#### 3.1.1 Converting/merging this raw files (combined_data_1.txt','combined_data_2.txt', 'combined_data_3.txt', 'combined_data_4.txt) to a required format: user_i, movie_i, rating_ij, data_i.
-#### 3.1.2 Checking for Nan values.
-#### 3.1.3 Removing Duplicate values.
-#### 3.1.4 Splittig into train/test(80:20)
-#### 3.1.5 Basic statistics in train data
+### 3.1 Converting/merging this raw files (combined_data_1.txt','combined_data_2.txt', 'combined_data_3.txt', 'combined_data_4.txt) to a required format: user_i, movie_i, rating_ij, data_i.
+### 3.2 Checking for Nan values.
+### 3.3 Removing Duplicate values.
+### 3.4 Splittig into train/test(80:20)
+### 3.5 Basic statistics in train data
 <pre>
 <ul>
 <li> Total no of ratings : 80384405 </li>
@@ -106,7 +104,7 @@ Dates have the format YYYY-MM-DD.
 </ul>
 </pre>
 
-#### 3.1.6 Basic statistics in train data
+### 3.6 Basic statistics in train data
 <pre>
 <ul>
 <li> Total no of ratings : 20096102 </li>
@@ -115,5 +113,41 @@ Dates have the format YYYY-MM-DD.
 </ul>
 </pre>
 
+## 4. Exploratory Data Analysis on train data.
+
+### 4.1 Distribution of ratings
+
+<img src='images/dist_rating.jpg'>
+
+### 4.2 Number of ratings per month
+
+<img src='images/num_rating.jpg'>
+
+
+### 4.3 Analysis of ratings given by user.
+
+<img src='images/user_rating_quantile.jpg'>
+
+Observaton(s): 
+- Median of user rating is 89.
+- 75% of the user have rated less than equal to 245 movies.
+- One person has rated 17112 movies.
+
+### 4.4 Analysis of ratings of a movie given by a user
+
+<img src='images/movie_rating.jpg'>
+
+Observation(s):
+
+- There are some movies (which are very popular) which are rated by huge number of users.
+- But most of the movies(like 90%) got some hundereds of ratings.
+
+### 4.5 Number of rating on a given day of week.
+
+<img src='images/day_rating.jpg'>
+
+Observation(s):
+
+- It is surprise to observe that more number of ratings are not given on weekends but in week days.
 
 
