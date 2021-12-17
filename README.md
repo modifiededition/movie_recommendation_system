@@ -1,4 +1,6 @@
-#Netflix Movie Recommendation System
+# Netflix Movie Recommendation System
+
+<img src='images/netflix-q.jpg'>
 
 ## Buisness Problem
 
