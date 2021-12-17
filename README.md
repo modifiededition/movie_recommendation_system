@@ -117,16 +117,16 @@ Dates have the format YYYY-MM-DD.
 
 ### 4.1 Distribution of ratings
 
-<img src='images/dist_rating.jpg'>
+<img src='images/dist_rating.png'>
 
 ### 4.2 Number of ratings per month
 
-<img src='images/num_rating.jpg'>
+<img src='images/num_rating.png'>
 
 
 ### 4.3 Analysis of ratings given by user.
 
-<img src='images/user_rating_quantile.jpg'>
+<img src='images/user_rating_quantile.png'>
 
 Observaton(s): 
 - Median of user rating is 89.
@@ -135,7 +135,7 @@ Observaton(s):
 
 ### 4.4 Analysis of ratings of a movie given by a user
 
-<img src='images/movie_rating.jpg'>
+<img src='images/movie_rating.png'>
 
 Observation(s):
 
@@ -144,7 +144,7 @@ Observation(s):
 
 ### 4.5 Number of rating on a given day of week.
 
-<img src='images/day_rating.jpg'>
+<img src='images/day_rating.png'>
 
 Observation(s):
 
