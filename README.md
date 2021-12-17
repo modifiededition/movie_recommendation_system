@@ -91,3 +91,29 @@ Dates have the format YYYY-MM-DD.
 
 ## 3. Exploratory Data Analysis
 
+### 3.1 Preprocessing steps
+
+#### 3.1.1 Converting/merging this raw files (combined_data_1.txt','combined_data_2.txt', 'combined_data_3.txt', 'combined_data_4.txt) to a required format: user_i, movie_i, rating_ij, data_i.
+#### 3.1.2 Checking for Nan values.
+#### 3.1.3 Removing Duplicate values.
+#### 3.1.4 Splittig into train/test(80:20)
+#### 3.1.5 Basic statistics in train data
+<pre>
+<ul>
+<li> Total no of ratings : 80384405 </li>
+<li> Total No of Users   : 405041 </li>
+<li> Total No of movies  : 17424 </li>
+</ul>
+</pre>
+
+#### 3.1.6 Basic statistics in train data
+<pre>
+<ul>
+<li> Total no of ratings : 20096102 </li>
+<li> Total No of Users   : 349312 </li>
+<li> Total No of movies  : 17757 </li>
+</ul>
+</pre>
+
+
+
