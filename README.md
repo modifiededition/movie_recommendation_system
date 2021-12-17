@@ -150,4 +150,70 @@ Observation(s):
 
 - It is surprise to observe that more number of ratings are not given on weekends but in week days.
 
+### 4.6 Cold Start Problem: is a proablem of making recommendations when the user/movie is new i.e not present in the training set.
+
+#### 4.6.1 Cold start problem with users
+<pre>
+- Total number of Users  : 480189
+- Number of Users in Train data : 405041
+- No of Users that didn't appear in train data: 75148(15.65 %) 
+
+> We might have to handle __new users__ ( ___75148___ ) who didn't appear in train data.
+</pre>
+
+#### 4.6.2 Cold start problem with movies
+<pre>
+- Total number of Movies  : 17770
+- Number of Users in Train data : 17424
+- No of Movies that didn't appear in train data: 346(1.95 %) 
+
+> We might have to handle __346 movies__ (small comparatively) in test data
+</pre>
+
+
+## 5. Feature Engineering.
+
+### 5.1 Creating sparse matrix from dataframe.
+
+<table>
+<tr>
+<td>
+<img src='images/data_c.jpg' width='250px' align=left/>
+</td>
+<td>
+<img src='images/arrow.jpg' width='60px' align=left/>
+</td>
+<td>
+<img src='images/data_sparse_c.jpg' width='400px' align=left/>
+</td>
+</tr>
+</table>
+
+### 5.2 Sampling Data: Instead of working over complete train/test data. We are going to take a sample of train(10,000 users and 1000 movies) and test data(5000 users and 500 movies) to work on.
+<pre>
+- No of ratings in Our Sampled train matrix is : 129286
+- No of ratings in Our Sampled test  matrix is : 7333
+</pre>
+
+### 5.3 Finding Global average of all the movie ratings (from sampled train).
+<pre>
+Global average rating: 3.5
+</pre>
+### 5.3 Finding average rating per user.
+<pre>
+Average rating of user 1515220  : 3.9
+</pre>
+### 5.4 Finding average rating per movie.
+<pre>
+Average rating of movie 15153  : 2.6
+</pre>
+
+
+
+
+
+
+
+
+
 
