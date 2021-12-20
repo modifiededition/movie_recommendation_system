@@ -208,19 +208,19 @@ Average rating of user 1515220  : 3.9
 Average rating of movie 15153  : 2.6
 </pre>
 
-### 5.5 Top 5 ratings of "movie" by similar users of "user".
+### 5.5 Top 5 ratings of "movie" by similar users of "user": i.e choosing top 5 similar users to user (u_i) rating and who has rated the movie (m_j).
 
-### Top 5 ratings by a "user" to similar movies of "movie".
+### 5.6 Top 5 ratings by a "user" to similar movies of "movie": i.e choosing top 5 similar movies to a movie(m_j) and ratings given to them by user (u_i).
 
-###  13 hand crafted features that can be used as x_i to predict y_i (rating).
-
+###  So, 13 hand crafted features that can be used as x_i to predict y_i (rating).
+<pre>
 	user	movie	GAvg	sur1	sur2	sur3	sur4	sur5	smr1	smr2	smr3	smr4	smr5	UAvg	MAvg	rating
 0	808635	71	3.581679	3.581679	3.581679	3.581679	3.581679	3.581679	3.581679	3.581679	3.581679	3.581679	3.581679	3.581679	3.581679	5
 1	941866	71	3.581679	3.581679	3.581679	3.581679	3.581679	3.581679	3.581679	3.581679	3.581679	3.581679	3.581679	3.581679	3.581679	4
 2	1737912	71	3.581679	3.581679	3.581679	3.581679	3.581679	3.581679	3.581679	3.581679	3.581679	3.581679	3.581679	3.581679	3.581679	3
 3	1849204	71	3.581679	3.581679	3.581679	3.581679	3.581679	3.581679	3.581679	3.581679	3.581679	3.581679	3.581679	3.581679	3.581679	4
 
-
+</pre>
 
 
 
