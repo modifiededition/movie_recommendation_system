@@ -5,7 +5,7 @@
 # Usage:
 
 1. netflix_movie is the ipythnon notebook where you can find all the code related to EDA, featurization and modelling.
-2. All the intermediate computed data, can be downloaded from this drive link: https://drive.google.com/drive/folders/1pbx84eYkjwKuZuuxc4-yiTm9ktvVyygm?usp=sharing
+2. All the intermediate computed data, can be downloaded from this drive link: https://drive.google.com/file/d/1YMp72eNCPq2X6KhIT3KDqgYEdCMxIze0/view?usp=sharing
 3. For the code walkthrough, check out the ipython notebook. Below is given step-by-step approach used to solve this problem. It contains observations from EDA, feature engineering steps and the explaination  of the models used.
 ## Tools
 
