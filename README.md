@@ -287,10 +287,27 @@ __predicted Rating__ : ( ___ based on User-User similarity ___ )
  -  ___Notations follows same as above (user user based predicted rating ) ___
 
 ### 6.2.3. Using matrix factorization technique: SVD
+http://surprise.readthedocs.io/en/stable/matrix_factorization.html#surprise.prediction_algorithms.matrix_factorization.SVD 
 
-### Here is the flow chart which explains all the modelling steps taken to predict the ratings.
+<img src='images/svd.png'>
 
-<img src='images/flow_chart.png'>
+ <img src='images/scd_opt.png'>
+- ANd this optimiation problem can easily be solved using SGD to compute user_bias, movie_bias, q_i and p_u. 
+- We can also use  SVD to compute q_i and p_u which can act as baseline.
+
+### 6.2.4 Using SVD++
+
+- The reasonong for using this as we already have user (u_i) rating on movie (m_j) which is called explicit feedback. Here, we are going to consider the implicit feedback which is let's a user that did not give rating to a movie (m_j) but spend some time on it's page, so this can be very userful information to consider. but, here we do not have that information for implicit feedback, so we build it by consdering the user's feedback which he/she has given whether good or bad.
+
+<img src='images/svd_plus.png'>
+
+<img src='images/svd_plus_opt.png'>
+
+### Here is the flow chart explaining the complete flow of all the modelling steps taken to predict the ratings.
+
+
+
+
 
 
 
