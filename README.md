@@ -306,6 +306,7 @@ http://surprise.readthedocs.io/en/stable/matrix_factorization.html#surprise.pred
 ### Here is the flow chart explaining the complete flow of all the modelling steps taken to predict the ratings.
 
 
+<img src='images/models.png'>
 
 
 
