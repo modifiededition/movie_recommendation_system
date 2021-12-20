@@ -2,6 +2,29 @@
 
 <img src='images/netflix-q.jpg'>
 
+# Usage:
+
+1. netflix_movie is the ipythnon notebook where you can find all the code related to EDA, featurization and modelling.
+2. All the intermediate computed data, can be downloaded from this drive link: https://drive.google.com/drive/folders/1pbx84eYkjwKuZuuxc4-yiTm9ktvVyygm?usp=sharing
+3. For the code walkthrough, check out the ipython notebook. Below is given step-by-step approach used to solve this problem. It contains observations from EDA, feature engineering steps and the explaination  of the models used.
+## Tools
+
+![python](https://img.shields.io/badge/python-3.8.8-yellow)
+![surprise](https://img.shields.io/badge/surprise-0.1-red)
+![scipy](https://img.shields.io/badge/networkx-1.6.2-yellowgreen)
+![pandas](https://img.shields.io/badge/pandas-1.2.4-blue)
+![matplotlib](https://img.shields.io/badge/matplotlib-3.3.4-lightgrey)
+![numpy](https://img.shields.io/badge/numpy-1.19.5-black)
+![sklearn](https://img.shields.io/badge/sklearn-1.0.1-green)
+
+
+### Support
+
+[![LinkedIn](https://img.shields.io/badge/linkedin-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/ashish-goyal-00/)
+[![Twitter](https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white)](https://twitter.com/modifiededition)
+
+
+
 ## Buisness Problem
 
 ### Problem Description
