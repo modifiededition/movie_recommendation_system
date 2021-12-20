@@ -246,27 +246,48 @@ So, we can easily build this solution by computing movie-movie similarity using 
 **We will be optimizing various surprise based given algorithms like baseline, KNN Baseline, SVD, SCD++.**
 
 ### 6.2.1. Surprise baseline model
+http://surprise.readthedocs.io/en/stable/basic_algorithms.html#surprise.prediction_algorithms.baseline_only.BaselineOnly 
 
 <pre>
- http://surprise.readthedocs.io/en/stable/basic_algorithms.html#surprise.prediction_algorithms.baseline_only.BaselineOnly 
- >$   \large {\hat{r}_{ui} = b_{ui} =\mu + b_u + b_i} $
 
+<img src='images/baseline.png'>
 
-- $\pmb \mu $ : Average of all trainings in training data.
-- $\pmb b_u$ : User bias
-- $\pmb b_i$ : Item bias (movie biases) 
 - So, baseline model tells predicted rating can be equal to global average rating, user bias and movie bias.
-- And, we can easily find user bias and movie bias with optimizing this below function.
+- And, we can easily find user bias and movie bias with solving this optimization function using SGD.
 
 __Optimization function ( Least Squares Problem ) __
 
-    - http://surprise.readthedocs.io/en/stable/prediction_algorithms.html#baselines-estimates-configuration 
+- http://surprise.readthedocs.io/en/stable/prediction_algorithms.html#baselines-estimates-configuration 
 
-> $ \large \sum_{r_{ui} \in R_{train}} \left(r_{ui} - (\mu + b_u + b_i)\right)^2 +
-\lambda \left(b_u^2 + b_i^2 \right).\text {        [mimimize } {b_u, b_i]}$ 
-
+<img src='images/baseline_op.png'>
 
 </pre>
+
+### 6.2.2. Surprise KNNBaseline predictor
+
+- KNN BASELINE
+    - http://surprise.readthedocs.io/en/stable/knn_inspired.html#surprise.prediction_algorithms.knns.KNNBaseline 
+- PEARSON_BASELINE SIMILARITY
+    - http://surprise.readthedocs.io/en/stable/similarities.html#surprise.similarities.pearson_baseline 
+- SHRINKAGE
+    - _2.2 Neighborhood Models_ in http://courses.ischool.berkeley.edu/i290-dm/s11/SECURE/a1-koren.pdf 
+
+__predicted Rating__ : ( ___ based on User-User similarity ___ )
+
+ <img src='images/u_u_pr.png'>
+
+- Generally, it will be cosine similarity or Pearson correlation coefficient. 
+- But we use __shrunk Pearson-baseline correlation coefficient__, which is based on the pearsonBaseline similarity ( we take base line predictions instead of mean rating of user/item).
+- here, (r_vi - b_vi) can be understand as correcting their baseline rating predictions.
+
+ __ Predicted rating __ ( based on Item Item similarity ):
+
+ <img src='images/m_m_pr.png'>
+ 
+ -  ___Notations follows same as above (user user based predicted rating ) ___
+
+### 6.2.3. Using matrix factorization technique: SVD
+
 ### Here is the flow chart which explains all the modelling steps taken to predict the ratings.
 
 <img src='images/flow_chart.png'>
