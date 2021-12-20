@@ -95,7 +95,7 @@ Dates have the format YYYY-MM-DD.
 ### 3.2 Checking for Nan values.
 ### 3.3 Removing Duplicate values.
 ### 3.4 Splittig into train/test(80:20)
-### 3.5 Basic statistics in train data
+#### Basic statistics in train data
 <pre>
 <ul>
 <li> Total no of ratings : 80384405 </li>
@@ -104,7 +104,7 @@ Dates have the format YYYY-MM-DD.
 </ul>
 </pre>
 
-### 3.6 Basic statistics in train data
+#### Basic statistics in test data
 <pre>
 <ul>
 <li> Total no of ratings : 20096102 </li>
